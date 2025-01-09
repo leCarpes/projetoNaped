@@ -1,0 +1,128 @@
+@import url('./home.css');
+
+
+.titleBanner{
+    /* border: 2px solid red; */
+}
+
+.titleBanner>h1{
+    /* border: 2px solid blue; */
+    font-size: 36px;
+    width: 80vw;
+}
+
+.titleBanner>p{
+    /* border: 2px solid yellow; */
+    font-size: 24px;
+    width: 50vw;
+}
+
+.titleBanner>p:nth-child(3){
+    display: none;
+}
+
+.titleBanner>span{
+    /* border: 2px solid purple; */
+    font-family: "Inter", serif;
+    font-size: 18px;
+    color: var(--color-textFont);
+}
+
+/*-------------------------------------*/
+
+.contentMain{
+    /* border: 2px solid wheat; */
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.firstImgBanner{
+    /* border: 2px solid red; */
+    width: auto;
+    height: 450px;
+    background-image: url('../assets/images/bannerNews1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 20px;
+}
+
+.buttonBanner{
+    background-color: var(--color-secondary);
+    width: 8vw;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: var(--color-titleFont);
+    font-family: "Lexend Deca", serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contentMain>p{
+    font-family: "Inter", serif;
+    font-size: 24px;
+    color: var(--color-textFont);
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.secondImgBanner{
+    width: auto;
+    height: 350px;
+    background-image: url('../assets/images/bannerNews2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 20px;
+}
+
+@media  screen and (max-width:415px) {
+    
+.titleBanner>h1{
+    font-size: 24px;
+    width: 70vw;
+}
+
+.titleBanner>p:nth-child(2){
+    display: none;
+}
+
+.titleBanner>p:nth-child(3){
+    display: block;
+    font-size: 16px;
+    width: 60vw;
+}
+
+.titleBanner>span{
+    font-size: 12px;
+}
+
+
+.firstImgBanner{
+    height: 250px;
+    background-image: url('../assets/images/bannerNewsMobile1.svg');
+    padding: 10px;
+}
+
+.buttonBanner{
+    background-color: var(--color-secondary);
+    width: 20vw;
+    font-size: 12px;
+}
+
+.contentMain>p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.secondImgBanner{
+    height: 250px;
+    background-image: url('../assets/images/bannerNewsMobile2.svg');
+    padding: 10px;
+}
+
+}

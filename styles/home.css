@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -135,7 +141,7 @@ body{
 .banner{
    /* border: 2px solid red; */
    width: 760px;
-    height: 350px;
+   height: 350px;
    background-image: linear-gradient(to bottom, rgba(19, 19, 31, 0), rgb(19, 19, 31)),url('../assets/images/banner.svg');
    background-size: cover;
    background-repeat: no-repeat;
@@ -148,7 +154,7 @@ body{
 }
 
 
-.banner>button{
+.buttonBanner{
     background-color: var(--color-secondary);
     width: 8vw;
     border: none;
@@ -160,7 +166,7 @@ body{
     cursor: pointer;
 }
 
-.banner>button:hover{
+.buttonBanner:hover{
     opacity: 80%;
 }
 
@@ -233,6 +239,11 @@ body{
     font-size: 13px;
     color: var(--color-titleFont);
     line-height: 20px;
+}
+
+.textSmallBanner>a{
+    text-decoration: none;
+    color: var(--color-titleFont);
 }
 
 /*---------------------------------------------------------*/
@@ -543,6 +554,8 @@ hr{
 } */
 
 
+
+
 .napedHeader{
     /* border: 2px solid red; */
     flex-wrap: wrap;
@@ -662,6 +675,7 @@ hr{
     margin-top: 5vh;
     height: 400px;
     gap: 20px;
+    overflow-x: hidden;
 }
 
 
