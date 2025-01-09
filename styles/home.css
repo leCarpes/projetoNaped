@@ -16,6 +16,7 @@ font-family: "Inter", serif; */
 :root{
     --color-primary: #13131F;
     --color-secondary:#8257E6;
+    --color-tertiary: #282830;
     --color-titleFont:#FEFBFB;
     --color-textFont:#C4C4C4;
 }
@@ -98,6 +99,11 @@ body{
 
 .buttonNapedHeader:hover{
     border: 2px solid var(--color-titleFont);
+}
+
+.buttonNapedHeader>a{
+    text-decoration: none;
+    color: var(--color-titleFont);
 }
 
 /*------------------------------------------------------*/
@@ -282,7 +288,7 @@ body{
 }
   
 .napedMain::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
 }
 
 .napedArticle{
